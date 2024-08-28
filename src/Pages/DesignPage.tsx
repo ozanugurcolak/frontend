@@ -23,7 +23,7 @@ const DesignPage = (props: Props) => {
       components of the app with brief instructions on how to use them.
     </h2>
     <RatioList config={tableConfig} data={testIncomeStatementData} />
-    <Table />
+    <Table config={tableConfig} data={testIncomeStatementData} />
     <h3>
       Table - Table takes in a configuration object and company data as
       params. Use the config to style your table.

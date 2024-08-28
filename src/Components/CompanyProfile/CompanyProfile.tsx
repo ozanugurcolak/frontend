@@ -12,12 +12,7 @@ const tableConfig = [
       render: (company: CompanyKeyMetrics) => company.marketCapTTM,
       subTitle: "Total value of all a company's shares of stock",
     },
-    {
-      label: "Current Ratio",
-      render: (company: CompanyKeyMetrics) => company.currentRatioTTM,
-      subTitle:
-        "Measures the companies ability to pay short term debt obligations",
-    },
+
     {
       label: "Return On Equity",
       render: (company: CompanyKeyMetrics) => company.roeTTM,
@@ -65,6 +60,12 @@ const tableConfig = [
       subTitle:
         "This is the upperbouind of the price range that a defensive investor should pay for a stock",
     },
+    {
+        label: "Return On Assets",
+        render: (company: CompanyKeyMetrics) => company.returnOnTangibleAssetsTTM,
+        subTitle:
+          "Return on assets is the measure of how effective a company is using its assets",
+      },
   ];
 const CompanyProfile = (props: Props) => {
     const ticker = useOutletContext<string>();

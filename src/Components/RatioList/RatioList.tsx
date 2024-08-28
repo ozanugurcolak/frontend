@@ -1,5 +1,3 @@
-import React from "react";
-import { TestDataCompany } from "../Table/TestData";
 
 
 type Props = {
