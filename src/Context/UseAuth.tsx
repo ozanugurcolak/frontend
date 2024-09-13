@@ -5,7 +5,7 @@ import { loginAPI, registerAPI } from "../Services/AuthService";
 import { toast } from "react-toastify";
 import React from "react";
 import axios from "axios";
-
+import 'react-toastify/dist/ReactToastify.css';
 type UserContextType = {
   user: UserProfile | null;
   token: string | null;
